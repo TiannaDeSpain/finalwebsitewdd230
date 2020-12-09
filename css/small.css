@@ -1,0 +1,526 @@
+#announcment,
+#fhAnnouncment,
+#ssAnnouncment {
+  display: none;
+  font-family: 'Barlow', sans-serif;
+  background-color: #f5f1d8;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+#saturday {
+  margin: 0;
+  padding: .4em;
+}
+
+body {
+  margin: auto;
+  background: #90b4d8;
+}
+
+p,
+#currentDate,
+#year,
+#sunidahofooter,
+a,
+td {
+  font-family: 'Barlow', sans-serif;
+}
+
+a {
+  padding: 3px;
+  font-size: 15px;
+}
+
+header,
+footer {
+  background-color: #f3c155;
+}
+
+header {
+  margin-top: 10px;
+  height: 125px;
+}
+
+h1,
+h2,
+h3,
+h4,
+th,
+label,
+#city,
+#stormdate,
+legend,
+ul {
+  font-family: 'Montserrat', sans-serif;
+  margin: .35rem;
+}
+
+
+h3,
+#address,
+#contacttitle,
+footer,
+#title {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.75rem;
+  padding: 10px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+#currentDate,
+#year,
+#sunidahofooter,
+.wireframes {
+  font-size: 1rem;
+  display: inline-block;
+}
+
+p {
+  margin: 12px;
+  text-align: left;
+}
+
+footer {
+  padding: 5px 50px 15px;
+}
+
+h2,
+h3,
+h4,
+a {
+  align-self: center;
+}
+
+main {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+#logo {
+  max-width: 20%;
+  float: left;
+  padding: 10px 7%;
+}
+
+/* NAV */
+nav,
+button {
+  margin: 0 auto;
+  max-width: 760px;
+  background-color: #2e6ca3;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+a {
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: #f5f1d8;
+  font-weight: 700;
+}
+
+#submit:hover,
+a:hover {
+  color: black;
+  background-color: #f5f1d8;
+}
+
+.responsive li {
+  display: block;
+}
+
+.active {
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+
+/* END NAV */
+
+h1,
+h2 {
+  margin: 1rem;
+}
+
+/* Hero Box*/
+
+.herodiv {
+  margin: auto;
+  position: relative;
+  width: 100%;
+}
+
+#hero {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Weather summary box */
+#current,
+#high,
+#chill,
+#humid,
+#speed {
+  padding: 0;
+}
+
+.weathersum {
+  display: block;
+  background-color: #f3c155;
+  border: 1px solid #2e6ca3;
+  padding: 1rem;
+  z-index: 100;
+}
+
+hr {
+  border: 1px solid #2e6ca3;
+}
+
+p.weatherinfo {
+  margin: 0;
+  padding: 0px;
+  padding-right: 10px;
+}
+
+#current,
+#high,
+#chill,
+#humid,
+#speed,
+.weatherinfo {
+  font-size: 12px;
+}
+
+#weatherhead {
+  font-size: 16px;
+}
+
+/* Five day box  */
+.fiveday {
+  display: none;
+}
+
+.article,
+#events,
+.contactinfo {
+  display: block;
+  margin: 10px auto;
+  position: relative;
+  width: 100%;
+  border: .5px solid #142e46;
+}
+
+/* Article Box */
+.article,
+#events {
+  background-color: #f5f1d8;
+  z-index: 1;
+}
+
+#articlecontent {
+  padding: 1em;
+}
+
+#articletitle {
+  padding-top: 1em;
+  padding-left: 1rem;
+}
+ul{
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+#janice,
+#garrett,
+#jessica,
+#henry {
+  width: 70%;
+  margin: 1.5em;
+  box-shadow: 0 0 15px #142e46;
+}
+
+#byline {
+  color: #2e6ca3;
+  padding-left: 1em;
+}
+
+/*event box*/
+#events {
+  background-color: #f5f1d8;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+/* Contact Info  */
+.social {
+  display: inline-block;
+  width: 64px;
+}
+
+#socialiconsdiv {
+  width: 270px;
+  margin: auto;
+  max-width: 100%;
+}
+
+.contactinfo {
+  height: 250px;
+  background-color: #f0ac17;
+  margin-bottom: 1rem;
+}
+
+#contacttitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 25px;
+  padding-top: .5em;
+}
+
+.contact,
+.contacticon {
+  display: inline-block;
+}
+
+.contacticon {
+  width: 18px;
+}
+
+.contact {
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+#map {
+  display: none;
+}
+
+#phoneandemail {
+  padding: .5em
+}
+
+.wireframes {
+  font-family: 'Barlow', sans-serif;
+  color: black;
+}
+
+.wireframes:hover {
+  color: #f0ac17;
+  background-color: #2e6ca3;
+  font-size: 24px;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+/* TOWNS JSON FILE ORDERING*/
+div.towns {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.city *,
+.griddivs * {
+  text-align: center;
+}
+
+.city {
+  background-color: #f3c155;
+}
+
+.towns {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.towns:nth-child(odd) img {
+  max-width: 300px;
+  grid-column: 2;
+  
+}
+div.towns img {
+  padding-bottom: 1em;
+}
+
+/* END TOWNS JSON FILE ORDERING*/
+
+img[data-src] {
+  filter: blur(0.2em);
+}
+
+.notice {
+  font-size: 12px;
+  padding-left: .5em;
+}
+
+#title {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+#name,
+#email,
+#tel {
+  width: 70%;
+  min-width: 250px;
+}
+
+#stormdate,
+#zip,
+#stormtype,
+#city {
+  width: 50%;
+  min-width: 170px;
+}
+
+#name,
+#email,
+#tel,
+#stormdate,
+#zip,
+#rating,
+#city,
+#danger,
+#additional,
+label,
+#stormkind {
+  margin: 5px;
+  display: block;
+  line-height: 2em;
+}
+
+input[list='stormtype'] {
+  width: 50%;
+  min-width: 170px;
+  display: block;
+  line-height: 2em;
+  ;
+}
+
+#city {
+  height: 2em;
+}
+
+#submit {
+  font-family: 'Montserrat', sans-serif;
+  width: 15%;
+  margin: 10px 15%;
+  min-width: 200px;
+  background-color: #2e6ca3;
+  color: #f5f1d8;
+  padding: .75rem;
+  text-decoration: none;
+}
+
+form {
+  background-color: #f3c155;
+  padding: 3rem;
+  margin-bottom: 2rem;
+}
+
+div {
+  margin-bottom: 2rem;
+}
+
+.safeoptions {
+  display: inline;
+  margin-top: 1rem;
+  margin-left: .5rem;
+}
+
+textarea {
+  width: 90%;
+  height: 150px;
+}
+
+input[type='radio'] {
+  transform: scale(2);
+}
+
+#thanks {
+  text-align: center;
+  padding: 3em;
+}
+
+button,
+#sunidahofooter,
+#footer div#button {
+  text-align: center;
+}
+
+fieldset {
+  border: 5px solid #2e6ca3;
+  margin-top: 2rem;
+}
+
+.griditems {
+  display: block;
+  width: 86%;
+  height: 70%;
+  margin: auto;
+  margin-top: 1em;
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+.griddivs {
+  border: solid 1px #2e6ca3;
+  margin: 1em;
+  max-height: 20em;
+}
+
+#gallery {
+  background-color: #f5f1d8;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+}
+
+.imgdescription {
+  margin: 12px;
+  text-align: center;
+}
+
+#welcome {
+  padding: 1em;
+  text-align: center;
+  font-weight: 500;
+}
