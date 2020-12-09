@@ -1,9 +1,17 @@
+/* colors: 
+  gray: #50514f
+  red: #f25f5c
+  yellow: #ffe066
+  blue: #247ba0
+  teal: #70c1b3
+*/
+
 #announcment,
 #fhAnnouncment,
 #ssAnnouncment {
   display: none;
   font-family: 'Barlow', sans-serif;
-  background-color: #f5f1d8;
+  background-color: #ffe066;
   text-align: center;
   font-size: 1.4em;
 }
@@ -15,7 +23,7 @@
 
 body {
   margin: auto;
-  background: #90b4d8;
+  background: #70c1b3;
 }
 
 p,
@@ -34,7 +42,7 @@ a {
 
 header,
 footer {
-  background-color: #f3c155;
+  background-color: #f25f5c;
 }
 
 header {
@@ -125,7 +133,7 @@ nav,
 button {
   margin: 0 auto;
   max-width: 760px;
-  background-color: #2e6ca3;
+  background-color: #247ba0;
 }
 
 .navigation {
@@ -146,14 +154,14 @@ a {
   padding: 0.75rem;
   text-align: left;
   text-decoration: none;
-  color: #f5f1d8;
+  color: #ffe066;
   font-weight: 700;
 }
 
 #submit:hover,
 a:hover {
   color: black;
-  background-color: #f5f1d8;
+  background-color: #ffe066;
 }
 
 .responsive li {
@@ -197,14 +205,14 @@ h2 {
 
 .weathersum {
   display: block;
-  background-color: #f3c155;
-  border: 1px solid #2e6ca3;
+  background-color: #f25f5c;
+  border: 1px solid #247ba0;
   padding: 1rem;
   z-index: 100;
 }
 
 hr {
-  border: 1px solid #2e6ca3;
+  border: 1px solid #247ba0;
 }
 
 p.weatherinfo {
@@ -244,7 +252,7 @@ p.weatherinfo {
 /* Article Box */
 .article,
 #events {
-  background-color: #f5f1d8;
+  background-color: #ffe066;
   z-index: 1;
 }
 
@@ -272,13 +280,13 @@ ul{
 }
 
 #byline {
-  color: #2e6ca3;
+  color: #247ba0;
   padding-left: 1em;
 }
 
 /*event box*/
 #events {
-  background-color: #f5f1d8;
+  background-color: #ffe066;
   padding-top: 2em;
   padding-bottom: 2em;
 }
@@ -339,7 +347,7 @@ ul{
 
 .wireframes:hover {
   color: #f0ac17;
-  background-color: #2e6ca3;
+  background-color: #247ba0;
   font-size: 24px;
   padding: 3px;
   border: 1px solid black;
@@ -359,7 +367,7 @@ div.towns {
 }
 
 .city {
-  background-color: #f3c155;
+  background-color: #f25f5c;
 }
 
 .towns {
@@ -442,14 +450,14 @@ input[list='stormtype'] {
   width: 15%;
   margin: 10px 15%;
   min-width: 200px;
-  background-color: #2e6ca3;
-  color: #f5f1d8;
+  background-color: #247ba0;
+  color: #ffe066;
   padding: .75rem;
   text-decoration: none;
 }
 
 form {
-  background-color: #f3c155;
+  background-color: #f25f5c;
   padding: 3rem;
   margin-bottom: 2rem;
 }
@@ -485,7 +493,7 @@ button,
 }
 
 fieldset {
-  border: 5px solid #2e6ca3;
+  border: 5px solid #247ba0;
   margin-top: 2rem;
 }
 
@@ -500,13 +508,13 @@ fieldset {
 }
 
 .griddivs {
-  border: solid 1px #2e6ca3;
+  border: solid 1px #247ba0;
   margin: 1em;
   max-height: 20em;
 }
 
 #gallery {
-  background-color: #f5f1d8;
+  background-color: #ffe066;
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
