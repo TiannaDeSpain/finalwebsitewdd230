@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="shortcut icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Montserrat:wght@500;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -34,30 +34,60 @@
     </nav>
     <main>
         <h2 id="welcome">Welcome to Scoots!</h2>
-        <div class="herodiv">
-            <picture>
-                <source srcset="images/home800.jpg" media="(min-width: 500px) and (max-width: 800px)">
-                <source srcset="images/home1100.jpg" media="(min-width: 800px)">
-                <img id="hero" alt="the rolling hills of idaho" src="images/home500.jpg">
-            </picture>
+        <div class="img">
+            <img id="homeimg1" alt="A woman with short curly gray hair smiling at the camera."
+                src="images/placeholder.jpg">
+            <img id="homeimg2" alt="A woman with short curly gray hair smiling at the camera."
+                src="images/placeholder.jpg">
+            <img id="homeimg3" alt="A woman with short curly gray hair smiling at the camera."
+                src="images/placeholder.jpg">
         </div>
-
-        <div class="towns">
-        </div>
-
-        <div class="article"> <img id="henry" alt="A man with a cup of coffee posing by a lake." src="images/henry.jpg">
-            <h2 id="articletitle">All About Us!</h2>
-            <p id="articlecontent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis a quo iure
-                excepturi, voluptates perferendis id consequatur nemo sapiente cupiditate porro magnam quisquam, fuga
-                obcaecati adipisci molestias nesciunt aut. Nam. </p>
+        <div id="homegrid">
+            <div class="article">
+                <h2 id="articletitle">All About Us!</h2>
+                <p id="articlecontent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis a quo iure
+                    excepturi, voluptates perferendis id consequatur nemo sapiente cupiditate porro magnam quisquam,
+                    fuga obcaecati adipisci molestias nesciunt aut. Nam. </p>
+                <div class="rentals">
+                    <input type="submit" id="submit" value="Book Now!">
+                </div>
+            </div>
+            <div id="weather">
+                <section class="weathersum">
+                    <h2 id="weatherhead">Weather</h2>
+                    <p class="weatherinfo">Currently: <span id="current">Sunny</span></p>
+                    <p class="weatherinfo">High: <span id="high">40</span> &#8457; </p>
+                    <p class="weatherinfo">Wind Chill: <span id="chill">0</span> &#8457; </p>
+                    <p class="weatherinfo">Humidity: <span id="humid">60%</span></p>
+                    <p class="weatherinfo">Wind Speed: <span id="speed">8</span> mph</p>
+                </section>
+                <h3>3 Day Forcast</h3>
+                <table>
+                    <tr>
+                        <th class="days" id="oneday"> Monday </th>
+                        <th class="days" id="twoday"> Tuesday </th>
+                        <th class="days" id="threeday"> Wednesday </th>
+                    </tr>
+                    <tr>
+                        <td><img id="oneimg" class="weathericon" alt="small sun icon" src="images/sun.png"> <span
+                                id="onespan">40</span> &#8457;</td>
+                        <td><img id="twoimg" class="weathericon" alt="small sun icon" src="images/sun.png"> <span
+                                id="twospan">45 </span> &#8457;</td>
+                        <td><img id="threeimg" class="weathericon" alt="small sun icon" src="images/sun.png"> <span
+                                id="threespan">45 </span> &#8457;</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div class="contactinfo">
             <img id="map" alt="map of headquarters location" src="images/map.png" />
             <div id="contacttext">
                 <p id="contacttitle">Scoots</p>
                 <p id="address"> 2060 Niter Bench Rd, Grace, ID 83241</p>
-                <p class="contact"> <img class="contacticon" alt="phone icon" src="images/phone.png"> (208) 660-8063</p>
-                <p class="contact"> <img class="contacticon" alt="email icon" src="images/email.png"> sunidaho@gmail.com
+                <p class="contact"> <img class="contacticon" alt="phone icon" src="images/phone.png"> (208) 660-8063
+                </p>
+                <p class="contact" x> <img class="contacticon" alt="email icon" src="images/email.png">
+                    scoots@gmail.com
                 </p>
                 <div id="socialiconsdiv">
                     <img class="social" src="images/facebook.png" alt="Facebook Logo" />
@@ -78,7 +108,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/towns.js"></script>
+
     <script src="js/observe.js"></script>
     <script src="js/webfontload.js"></script>
 </body>

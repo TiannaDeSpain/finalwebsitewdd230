@@ -18,7 +18,6 @@
 
   #logo {
     max-width: 15%;
-    float: left;
     padding: 10px 10px;
     max-height: 100px;
   }
@@ -90,32 +89,7 @@
     display: none;
   }
 
-
-
-  /* Hero box */
-  #hero {
-    width: 98%;
-  }
-
-
-
   /* weather box */
-
-  .weathersum {
-    position: absolute;
-    background-color: #f3c155;
-    border: 1px solid #2e6ca3;
-    padding: 1rem;
-    box-shadow: 0 0 30px #142e46;
-    opacity: .8;
-    z-index: 100;
-    width: 13em;
-    height: 8em;
-    margin-left: 0%;
-    top: 12%;
-    right: 45%;
-  }
-
   #current,
   #high,
   #chill,
@@ -124,55 +98,14 @@
   .weatherinfo,
   p {
     font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
   }
 
-  #weatherhead {
-    font-size: 20px;
-  }
-
-
-  /* five day weather box */
-
-  .fiveday {
-    display: block;
-    margin: 10px auto;
-    position: relative;
-    height: 175px;
-    width: 90%;
-  }
-
-  th,
-  td {
-    text-align: center;
-    padding: .2em;
-    width: 2em;
-  }
-
-  table,
-  th,
-  td {
-    border: 3px solid #2e6ca3;
-    border-collapse: collapse;
-    background-color: #f5f1d8;
-  }
-
-  table {
-    width: 80%;
-    margin: auto;
-  }
-
-  .weathericon {
-    max-width: 50px;
-  }
 
   .article,
   #events,
   .contactinfo {
     max-width: 95%;
-  }
-
-  #hero {
-    width: 98%;
   }
 
   /* Contact box */
@@ -214,45 +147,6 @@
     text-align: left;
   }
 
-  /* TOWNS JSON FILE ORDERING*/
-  div.city {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2rem;
-  }
-
-  div.towns div:nth-of-type(odd) p,
-  div.towns div:nth-of-type(odd) h3,
-  div.towns div:nth-of-type(odd) h2 {
-    grid-column: 1;
-  }
-
-  div.towns div:nth-of-type(even) p,
-  div.towns div:nth-of-type(oven) h3,
-  div.towns div:nth-of-type(even) h2 {
-    grid-column: 2;
-  }
-
-  div.towns div:nth-of-type(odd) img {
-    grid-column: 2;
-    grid-row: 1/10;
-    justify-self: center;
-    align-self: center;
-  }
-
-  div.towns div:nth-of-type(even) img {
-    grid-column: 1;
-    grid-row: 1/10;
-    justify-self: center;
-    align-self: center;
-  }
-
-  div.towns div h2 {
-    align-self: end;
-    margin: 0;
-  }
-
-  /* END TOWNS JSON FILE ORDERING*/
   textarea {
     width: 90%;
     height: 150px;

@@ -1,5 +1,5 @@
 /* colors: 
-  gray: #50514f
+  gray: #989997  989997
   red: #f25f5c
   yellow: #ffe066
   blue: #247ba0
@@ -10,7 +10,7 @@
 #fhAnnouncment,
 #ssAnnouncment {
   display: none;
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #ffe066;
   text-align: center;
   font-size: 1.4em;
@@ -27,12 +27,18 @@ body {
 }
 
 p,
+#current,
+#high,
+#chill,
+#humid,
+#speed,
+.weatherinfo,
 #currentDate,
 #year,
 #sunidahofooter,
 a,
 td {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -42,12 +48,13 @@ a {
 
 header,
 footer {
-  background-color: #f25f5c;
+  background-color: #989997;
 }
 
 header {
   margin-top: 10px;
-  height: 125px;
+  display: block;
+  height: 11.3em;
 }
 
 h1,
@@ -60,7 +67,7 @@ label,
 #stormdate,
 legend,
 ul {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
   margin: .35rem;
 }
 
@@ -95,9 +102,16 @@ h3 {
   display: inline-block;
 }
 
-p {
+p,
+#current,
+#high,
+#chill,
+#humid,
+#speed,
+.weatherinfo {
   margin: 12px;
   text-align: left;
+  padding-left: 1em;
 }
 
 footer {
@@ -124,7 +138,6 @@ img {
 
 #logo {
   max-width: 20%;
-  float: left;
   padding: 10px 7%;
 }
 
@@ -194,64 +207,36 @@ h2 {
   width: 100%;
 }
 
-/* Weather summary box */
-#current,
-#high,
-#chill,
-#humid,
-#speed {
-  padding: 0;
-}
+/* Weather box */
 
-.weathersum {
-  display: block;
-  background-color: #f25f5c;
-  border: 1px solid #247ba0;
-  padding: 1rem;
-  z-index: 100;
-}
-
-hr {
-  border: 1px solid #247ba0;
-}
-
-p.weatherinfo {
-  margin: 0;
-  padding: 0px;
-  padding-right: 10px;
-}
-
-#current,
-#high,
-#chill,
-#humid,
-#speed,
-.weatherinfo {
-  font-size: 12px;
-}
-
-#weatherhead {
-  font-size: 16px;
-}
-
-/* Five day box  */
 .fiveday {
-  display: none;
+  display: block;
+  margin: 10px auto 10px auto;
+  position: relative;
+  height: 175px;
+  width: 90%;
+}
+
+
+#events,
+.contactinfo, 
+#homegrid{
+  margin: 10px auto;
 }
 
 .article,
 #events,
-.contactinfo {
+.contactinfo, 
+#weather {
   display: block;
-  margin: 10px auto;
   position: relative;
   width: 100%;
   border: .5px solid #142e46;
 }
-
 /* Article Box */
 .article,
-#events {
+#events, 
+#weather {
   background-color: #ffe066;
   z-index: 1;
 }
@@ -260,7 +245,7 @@ p.weatherinfo {
   padding: 1em;
 }
 
-#articletitle {
+#articletitle, #weatherhead {
   padding-top: 1em;
   padding-left: 1rem;
 }
@@ -305,7 +290,7 @@ ul{
 
 .contactinfo {
   height: 250px;
-  background-color: #f0ac17;
+  background-color: #ffe066;
   margin-bottom: 1rem;
 }
 
@@ -341,7 +326,7 @@ ul{
 }
 
 .wireframes {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: black;
 }
 
@@ -355,34 +340,12 @@ ul{
 }
 
 /* TOWNS JSON FILE ORDERING*/
-div.towns {
+div.img {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 2rem;
 }
 
-.city *,
-.griddivs * {
-  text-align: center;
-}
-
-.city {
-  background-color: #f25f5c;
-}
-
-.towns {
-  width: 100%;
-  margin-top: 1em;
-}
-
-.towns:nth-child(odd) img {
-  max-width: 300px;
-  grid-column: 2;
-  
-}
-div.towns img {
-  padding-bottom: 1em;
-}
 
 /* END TOWNS JSON FILE ORDERING*/
 
@@ -446,7 +409,7 @@ input[list='stormtype'] {
 }
 
 #submit {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
   width: 15%;
   margin: 10px 15%;
   min-width: 200px;
@@ -532,3 +495,35 @@ fieldset {
   text-align: center;
   font-weight: 500;
 }
+.homegrid{
+  max-width: 95%;
+}
+
+  /* three day weather box */
+  th,
+  td {
+    text-align: center;
+    padding: .2em;
+  }
+
+  table,
+  th,
+  td {
+    border: 3px solid #f25f5c;
+    border-collapse: collapse;
+    background-color: #c1c2c1;
+  }
+
+  table {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+
+  .weathericon {
+    max-width: 50px;
+  }
+  #weatherhead {
+    text-align: center;
+    padding-left: 0;
+  }
