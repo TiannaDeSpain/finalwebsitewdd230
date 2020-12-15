@@ -35,12 +35,12 @@
     <main>
         <h2 id="welcome">Welcome to Scoots!</h2>
         <div class="img">
-            <img id="homeimg1" alt="A woman with short curly gray hair smiling at the camera."
-                src="images/placeholder.jpg">
-            <img id="homeimg2" alt="A woman with short curly gray hair smiling at the camera."
-                src="images/placeholder.jpg">
-            <img id="homeimg3" alt="A woman with short curly gray hair smiling at the camera."
-                src="images/placeholder.jpg">
+            <img id="homeimg1" alt="The east beach of Cozumel"
+                src="images/cozumelbeach.jpeg">
+            <img id="homeimg2" alt="Cozumel Beach."
+                src="images/mayanpyramid.jpeg">
+            <img id="homeimg3" alt="A veiw of a hut on the beach."
+                src="images/beachimg.jpeg">
         </div>
         <div id="homegrid">
             <div class="article">
@@ -49,7 +49,7 @@
                     excepturi, voluptates perferendis id consequatur nemo sapiente cupiditate porro magnam quisquam,
                     fuga obcaecati adipisci molestias nesciunt aut. Nam. </p>
                 <div class="rentals">
-                    <input type="submit" id="submit" value="Book Now!">
+                    <a class="booking" href="reservations.html">Book Now!</a>
                 </div>
             </div>
             <div id="weather">
@@ -58,7 +58,7 @@
                     <p class="weatherinfo">Currently: <span id="current">Sunny</span></p>
                     <p class="weatherinfo">High: <span id="high">40</span> &#8457; </p>
                     <p class="weatherinfo">Wind Chill: <span id="chill">0</span> &#8457; </p>
-                    <p class="weatherinfo">Humidity: <span id="humid">60%</span></p>
+                    <p class="weatherinfo">Humidity: <span id="humid">60</span> %</p>
                     <p class="weatherinfo">Wind Speed: <span id="speed">8</span> mph</p>
                 </section>
                 <h3>3 Day Forcast</h3>
@@ -69,33 +69,36 @@
                         <th class="days" id="threeday"> Wednesday </th>
                     </tr>
                     <tr>
-                        <td><img id="oneimg" class="weathericon" alt="small sun icon" src="images/sun.png"> <span
+                        <td><img id="oneimg" class="weathericon" alt="weather icon" src="images/placeholder.jpg"> <span
                                 id="onespan">40</span> &#8457;</td>
-                        <td><img id="twoimg" class="weathericon" alt="small sun icon" src="images/sun.png"> <span
+                        <td><img id="twoimg" class="weathericon" alt="placeholder icon" src="images/placeholder.jpg"> <span
                                 id="twospan">45 </span> &#8457;</td>
-                        <td><img id="threeimg" class="weathericon" alt="small sun icon" src="images/sun.png"> <span
+                        <td><img id="threeimg" class="weathericon" alt="weather placeholder" src="images/placeholder.jpg"> <span
                                 id="threespan">45 </span> &#8457;</td>
                     </tr>
                 </table>
             </div>
         </div>
         <div class="contactinfo">
-            <img id="map" alt="map of headquarters location" src="images/map.png" />
+            <iframe id="smallmap"
+                src="https://www.google.com/maps/d/u/0/embed?mid=1Xig5pG6lB44CUz_FVU_QfmVd54YjmP2P"></iframe>
             <div id="contacttext">
                 <p id="contacttitle">Scoots</p>
-                <p id="address"> 2060 Niter Bench Rd, Grace, ID 83241</p>
-                <p class="contact"> <img class="contacticon" alt="phone icon" src="images/phone.png"> (208) 660-8063
+                <p id="address"> San Miguel de Cozumel, Quintana Roo, Mexico</p>
+                <p class="contact"> <img class="contacticon" alt="phone icon" src="images/phone.png"> (+52) (987)
+                    660-8063
                 </p>
                 <p class="contact" x> <img class="contacticon" alt="email icon" src="images/email.png">
-                    scoots@gmail.com
+                    ScootsAroundCozumel@gmail.com
                 </p>
-                <div id="socialiconsdiv">
-                    <img class="social" src="images/facebook.png" alt="Facebook Logo" />
-                    <img class="social" src="images/instagram.png" alt="Instagram Logo" />
-                    <img class="social" src="images/pinterest.png" alt="Pinterest Logo" />
-                    <img class="social" src="images/twitter.png" alt="Twitter Logo" />
-                </div>
             </div>
+            <div id="socialiconsdivhome">
+                <img class="sociallink" src="images/facebook.png" alt="Facebook Logo" />
+                <img class="sociallink" src="images/instagram.png" alt="Instagram Logo" />
+                <img class="sociallink" src="images/pinterest.png" alt="Pinterest Logo" />
+                <img class="sociallink" src="images/twitter.png" alt="Twitter Logo" />
+            </div>
+        </div>
         </div>
     </main>
     <footer>
@@ -108,6 +111,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/weatherapi.js"></script>
 
     <script src="js/observe.js"></script>
     <script src="js/webfontload.js"></script>

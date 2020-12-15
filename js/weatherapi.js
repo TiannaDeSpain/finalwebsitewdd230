@@ -4,8 +4,7 @@ var current = document.getElementById("current")
 var humid = document.getElementById("humid")
 var speed = document.getElementById("speed")
 
-var fiveday = document.getElementById("fiveday")
-var fourday = document.getElementById("fourday")
+
 var threeday = document.getElementById("threeday")
 var twoday = document.getElementById("twoday")
 var oneday = document.getElementById("oneday")
@@ -13,16 +12,14 @@ var oneday = document.getElementById("oneday")
 var oneimg = document.getElementById("oneimg")
 var twoimg = document.getElementById("twoimg")
 var threeimg = document.getElementById("threeimg")
-var fourimg = document.getElementById("fourimg")
-var fiveimg = document.getElementById("fiveimg")
+
 
 var onespan = document.getElementById("onespan")
 var twospan = document.getElementById("twospan")
 var threespan = document.getElementById("threespan")
-var fourspan = document.getElementById("fourspan")
-var fivespan = document.getElementById("fivespan")
 
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=64286fe075e1c1e85b00043631a855cb&units=imperial";
+
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=3530103&appid=64286fe075e1c1e85b00043631a855cb&units=imperial";
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -32,7 +29,7 @@ fetch(apiURL)
     humid.innerHTML = jsObject.main.humidity
     speed.innerHTML = Math.round(jsObject.wind.speed)
   });
-const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=64286fe075e1c1e85b00043631a855cb&units=imperial";
+const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=3530103&appid=64286fe075e1c1e85b00043631a855cb&units=imperial";
 fetch(apiURL2)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -48,12 +45,6 @@ fetch(apiURL2)
     threeday.innerHTML = dayAsString(date.getDay()+2);
     threespan.innerHTML = Math.round(jsObject.list[2].main.temp_max)
     threeimg.setAttribute('src', 'https://api.openweathermap.org/img/w/' + list[2].weather[0].icon + '.png');
-    fourday.innerHTML = dayAsString(date.getDay()+3);
-    fourspan.innerHTML = Math.round(jsObject.list[3].main.temp_max)
-    fourimg.setAttribute('src', 'https://api.openweathermap.org/img/w/' + list[3].weather[0].icon + '.png');
-    fiveday.innerHTML = dayAsString(date.getDay()+4);
-    fivespan.innerHTML = Math.round(jsObject.list[4].main.temp_max)
-    fiveimg.setAttribute('src', 'https://api.openweathermap.org/img/w/' + list[4].weather[0].icon + '.png'); 
   });
 
   function dayAsString(dayIndex){
@@ -69,3 +60,13 @@ fetch(apiURL2)
   }
 
 
+  const apiURL3 = "https://api.openweathermap.org/data/2.5/onecall?lat=20.508329&lon=-86.945831&appid=64286fe075e1c1e85b00043631a855cb&units=imperial";
+  fetch(apiURL3)
+    .then((response) => response.json())
+    .then((jsObject) => {
+      console.log(jsObject);
+      if (jsObject.alerts) {
+        var message = "There is a " + jsObject.alerts.events + "warning."
+        window.alert(message)
+      }
+    })

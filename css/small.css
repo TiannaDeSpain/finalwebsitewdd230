@@ -1,6 +1,6 @@
 /* colors: 
   gray: #989997  989997
-  red: #f25f5c
+  red: #eb8987
   yellow: #ffe066
   blue: #247ba0
   teal: #70c1b3
@@ -37,10 +37,19 @@ p,
 #year,
 #sunidahofooter,
 a,
-td {
+td,
+label,
+.forminstructions {
   font-family: 'Open Sans', sans-serif;
 }
 
+input, textarea{
+  line-height: 2em;
+  margin: 4px;
+}
+.boxlabel{
+  font-size: 12px;
+}
 a {
   padding: 3px;
   font-size: 15px;
@@ -103,14 +112,24 @@ h3 {
 }
 
 p,
+.forminstructions,
+#current,
+#high,
+#chill,
+#humid,
+#speed,
+.weatherinfo,
+label {
+  margin: 12px;
+  text-align: left;
+}
+
 #current,
 #high,
 #chill,
 #humid,
 #speed,
 .weatherinfo {
-  margin: 12px;
-  text-align: left;
   padding-left: 1em;
 }
 
@@ -219,23 +238,24 @@ h2 {
 
 
 #events,
-.contactinfo, 
-#homegrid{
+.contactinfo,
+#homegrid {
   margin: 10px auto;
 }
 
 .article,
 #events,
-.contactinfo, 
+.contactinfo,
 #weather {
   display: block;
   position: relative;
   width: 100%;
   border: .5px solid #142e46;
 }
+
 /* Article Box */
 .article,
-#events, 
+#events,
 #weather {
   background-color: #ffe066;
   z-index: 1;
@@ -245,11 +265,13 @@ h2 {
   padding: 1em;
 }
 
-#articletitle, #weatherhead {
+#articletitle,
+#weatherhead {
   padding-top: 1em;
   padding-left: 1rem;
 }
-ul{
+
+ul {
   list-style-type: none;
   text-align: center;
   padding-left: 0;
@@ -277,15 +299,38 @@ ul{
 }
 
 /* Contact Info  */
+.contactinfopage {
+  display: block;
+}
+
+#map {
+  display: block;
+  margin: auto auto;
+  width: 80%;
+  border: 1px solid black;
+  box-shadow: 0 0 15px #142e46;
+}
+
 .social {
   display: inline-block;
   width: 64px;
 }
 
+.sociallink {
+  display: inline-block;
+  width: 64px;
+}
+
 #socialiconsdiv {
-  width: 270px;
+  width: 250px;
   margin: auto;
   max-width: 100%;
+}
+
+#socialiconsdivhome {
+  margin-right: 2em;
+  margin-left: 2em;
+  text-align: center;
 }
 
 .contactinfo {
@@ -297,8 +342,6 @@ ul{
 #contacttitle {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-left: 25px;
-  padding-top: .5em;
 }
 
 .contact,
@@ -315,10 +358,6 @@ ul{
   margin: auto;
   text-align: center;
   width: 100%;
-}
-
-#map {
-  display: none;
 }
 
 #phoneandemail {
@@ -342,11 +381,28 @@ ul{
 /* TOWNS JSON FILE ORDERING*/
 div.img {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 2rem;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
 }
 
+#homeimg1 {
+  grid-row: 1;
+  grid-column: 1/3;
+}
 
+#homeimg2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#homeimg3 {
+  grid-column: 2;
+  grid-row: 2;
+}
+div {
+  margin-bottom: 2rem;
+}
 /* END TOWNS JSON FILE ORDERING*/
 
 img[data-src] {
@@ -356,6 +412,10 @@ img[data-src] {
 .notice {
   font-size: 12px;
   padding-left: .5em;
+  text-align: center;
+}
+.forminstructions{
+  text-align:center;
 }
 
 #title {
@@ -365,12 +425,6 @@ img[data-src] {
   margin-top: 1rem;
 }
 
-#name,
-#email,
-#tel {
-  width: 70%;
-  min-width: 250px;
-}
 
 #stormdate,
 #zip,
@@ -380,35 +434,7 @@ img[data-src] {
   min-width: 170px;
 }
 
-#name,
-#email,
-#tel,
-#stormdate,
-#zip,
-#rating,
-#city,
-#danger,
-#additional,
-label,
-#stormkind {
-  margin: 5px;
-  display: block;
-  line-height: 2em;
-}
-
-input[list='stormtype'] {
-  width: 50%;
-  min-width: 170px;
-  display: block;
-  line-height: 2em;
-  ;
-}
-
-#city {
-  height: 2em;
-}
-
-#submit {
+.booking {
   font-family: 'Oswald', sans-serif;
   width: 15%;
   margin: 10px 15%;
@@ -417,17 +443,62 @@ input[list='stormtype'] {
   color: #ffe066;
   padding: .75rem;
   text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 form {
-  background-color: #f25f5c;
+  background-color: #eb8987;
   padding: 3rem;
   margin-bottom: 2rem;
+  padding-top: 0px;
+  margin-top:0px;
 }
 
-div {
-  margin-bottom: 2rem;
+.form li,
+.checks, .party {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
+
+
+.form>li>label,
+.form li p {
+  flex: 1 0 120px;
+  text-align: center;
+}
+
+.form>li>label+*,
+.checks, .party{
+  flex: 1 0 220px;
+}
+
+.form li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #ffe066;
+  color: #247ba0;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+.checks li{
+  width: 240px;
+}
+
+.checks, .party{
+  width:50%;
+}
+input.box {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+
 
 .safeoptions {
   display: inline;
@@ -438,10 +509,6 @@ div {
 textarea {
   width: 90%;
   height: 150px;
-}
-
-input[type='radio'] {
-  transform: scale(2);
 }
 
 #thanks {
@@ -495,35 +562,60 @@ fieldset {
   text-align: center;
   font-weight: 500;
 }
-.homegrid{
+
+.homegrid {
   max-width: 95%;
 }
 
-  /* three day weather box */
-  th,
-  td {
-    text-align: center;
-    padding: .2em;
-  }
+/* three day weather box */
+th,
+td {
+  text-align: center;
+  padding: .2em;
+}
 
-  table,
-  th,
-  td {
-    border: 3px solid #f25f5c;
-    border-collapse: collapse;
-    background-color: #c1c2c1;
-  }
+table,
+th,
+td {
+  border: 3px solid #eb8987;
+  border-collapse: collapse;
+  background-color: #c1c2c1;
+}
 
-  table {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 2em;
-  }
+table {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2em;
+}
 
-  .weathericon {
-    max-width: 50px;
-  }
-  #weatherhead {
-    text-align: center;
-    padding-left: 0;
-  }
+.weathericon {
+  max-width: 50px;
+}
+
+#weatherhead {
+  text-align: center;
+  padding-left: 0;
+}
+
+/* Tour Page */
+.tourdivs {
+  background-color: #f58482;
+  padding: 2em;
+}
+
+#tourgrid {
+  display: block;
+}
+
+.contactinfo {
+  display: grid;
+}
+
+#smallmap {
+  display: none;
+}
+#reservationinfo{
+  background: #eb8987;
+  padding:2rem;
+  margin-bottom:-10px;
+}

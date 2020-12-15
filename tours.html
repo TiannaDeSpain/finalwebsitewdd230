@@ -34,81 +34,57 @@
         </ul>
     </nav>
     <main>
-        <h2 id="title">Soda Springs</h2>
-        <div class="herodiv">
-            <picture>
-                <source srcset="images/sodasprings800.jpg" media="(min-width: 500px) and (max-width: 800px)">
-                <source srcset="images/sodasprings1100.jpg" media="(min-width: 800px)">
-                <img id="hero" alt="the rolling hills of idaho" src="images/sodasprings500.jpg">
-            </picture>
-
-            <section class="weathersum">
-                <h3 id="weatherhead">Weather Summary</h3>
-                <hr>
-                <p class="weatherinfo">Currently: <span id="current">Sunny</span></p>
-                <p class="weatherinfo">High: <span id="high">40</span> &#8457; </p>
-                <p class="weatherinfo">Wind Chill: <span id="chill">0</span> &#8457; </p>
-                <p class="weatherinfo">Humidity: <span id="humid">60%</span></p>
-                <p class="weatherinfo">Wind Speed: <span id="speed">8</span> mph</p>
-            </section>
-        </div>
-        <div class="fiveday">
-            <h3>5 Day Forcast</h3>
-            <table>
-                <tr>
-                    <th class="days" id="oneday"> Monday </th>
-                    <th class="days" id="twoday"> Tuesday </th>
-                    <th class="days" id="threeday"> Wednesday </th>
-                    <th class="days" id="fourday"> Thursday </th>
-                    <th class="days" id="fiveday"> Friday </th>
-                </tr>
-                <tr>
-                    <td><img id="oneimg" class="weathericon" alt="small sun icon" src="images/sun.png"> <span
-                            id="onespan">40</span> &#8457;</td>
-                    <td><img id="twoimg" class="weathericon" alt="small sun icon" src="images/sun.png"> <span
-                            id="twospan">45 </span> &#8457;</td>
-                    <td><img id="threeimg" class="weathericon" alt="small sun icon" src="images/sun.png"> <span
-                            id="threespan">45 </span> &#8457;</td>
-                    <td><img id="fourimg" class="weathericon" alt="small sun icon" src="images/sun.png"> <span
-                            id="fourspan">45 </span> &#8457;</td>
-                    <td><img id="fiveimg" class="weathericon" alt="small sun icon" src="images/sun.png"> <span
-                            id="fivespan">45 </span> &#8457;</td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="article"> <img id="jessica" alt="A woman with a polkadot shirt and braids."
-                src="images/jessica.jpg">
-            <h3 id="articletitle">Mayor's Choice Award Winner</h3>
-            <p id="byline"> By Jessica Smart</p>
-            <p id="articlecontent">City Council member Leah Fuller (pictured left) has been nominated for this year’s
-                The Mayor’s Choice Award Winner. In the Mayor’s speech she complimented Fuller for many things,
-                including her dedication to her work and service to her fullest capacity. One highlight was the
-                fundraiser she ran this year to repair Tom’s Animal Shelter that burnt down at the end of 2019. Fuller
-                ended up raising enough money, not only to fully rebuild the shelter but also to buy all new crates and
-                cases for the animals to reside in. <br><br> The Mayor also mentioned the close relationship Leah Fuller
-                has nurtured with the citizens of Soda Springs over the last 3 years she has served. Many residents call
-                on Fuller for questions regarding the current state of the town, such as inquiring about new buildings
-                going in, crime incidents and updates on the mask mandates due to COVID-19. Overall, many citizens love
-                Fuller, and are grateful she serves the community. </p>
-        </div>
-        <div id="events"></div>
-        <div class="contactinfo">
-            <img id="map" alt="map of headquarters location" src="images/map.png" />
-            <div id="contacttext">
-                <p id="contacttitle">Sun Idaho</p>
-                <p id="address"> 2060 Niter Bench Rd, Grace, ID 83241</p>
-                <p class="contact"> <img class="contacticon" alt="phone icon" src="images/phone.png"> (208) 660-8063</p>
-                <p class="contact"> <img class="contacticon" alt="email icon" src="images/email.png"> sunidaho@gmail.com
-                </p>
-                <div id="socialiconsdiv">
-                    <img class="social" src="images/facebook.png" alt="Facebook Logo" />
-                    <img class="social" src="images/instagram.png" alt="Instagram Logo" />
-                    <img class="social" src="images/pinterest.png" alt="Pinterest Logo" />
-                    <img class="social" src="images/twitter.png" alt="Twitter Logo" />
-                </div>
-            </div>
-        </div>
+        <h2 id="title">Tours:</h2>
+        <ul id="tourgrid">
+            <li class="tourdivs">
+                <img class="tourimgs" src="images/beachimg.jpeg" alt="tourlocation">
+                <h3 class="tourtitle"> Beach Hopper Tour: </h3>
+                <p class="tours"> This tour reaches 4 of the most beautiful locations for swimming on Cozumel! Your tour
+                    guide will help you find the perfect places on each beach to settle in for a few hours before moving
+                    to the next location. This is perfect for the beach bum inside you!</p>
+                <a class="booking" href="reservations.html">Book Now for only $78.99!</a>
+            </li>
+            <li class="tourdivs">
+                <img class="tourimgs" src="images/eastcoastbeach.jpg" alt="tourlocation">
+                <h3 class="tourtitle"> All inclusive Island Tour: </h3>
+                <p class="tours"> Our most famous tour- an all inclusive 6 hour island tour. We stop at three beaches, 5
+                    different historical sites and end with a all inclusive dinner cruise to watch the sunset on the
+                    ocean. (Alchohal not included) </p>
+                    <a class="booking" href="reservations.html">Book Now for only $324.99!</a>
+            </li>
+            <li class="tourdivs">
+                <img class="tourimgs" src="images/mayanpyramid.jpg" alt="tourlocation">
+                <h3 class="tourtitle"> Sight Seeing Tour: </h3>
+                <p class="tours">Are you into historical sigh seeing? Then this tour is for you! We will hit 8 different
+                    historical sites such as the Maya Ruins, El Cedral (the oldest settlement on the island) and a
+                    artisan market!</p>
+                    <a class="booking" href="reservations.html">Book Now for only $56.99!</a>
+            </li>
+            <li class="tourdivs">
+                <img class="tourimgs" src="images/scubadive.jpg" alt="tourlocation">
+                <h3 class="tourtitle"> Suba Diving Tour: </h3>
+                <p class="tours"> Catch a glimps of the amazing hidden views around Cozumel! Our professional scooba
+                    instructors will help teach you the basics of scooba diving, and then show you around the beautiful
+                    underwater views. This is one of the most sought after tours- so book ahead of time! </p>
+                    <a class="booking" href="reservations.html">Book Now for only $134.59!</a>
+            <li;>
+            <li class="tourdivs">
+                <img class="tourimgs" src="images/dolphin.jpg" alt="tourlocation">
+                <h3 class="tourtitle"> Widlife Sighting: </h3>
+                <p class="tours"> This tour specializes in helping you find the most exotic views of the wildlife here
+                    on Cozumel. You can expect to see Dolphins, fox, coatis and hundreds of unique birds. This is a
+                    perfect tour for family fun!</p>
+                    <a class="booking" href="reservations.html">Book Now for only $67.99!</a>
+            </li>
+            <li class="tourdivs">
+                <img class="tourimgs" src="images/hut.jpg" alt="tourlocation">
+                <h3 class="tourtitle"> Resturant Hopper Tour: </h3>
+                <p class="tours"> Calling all foodies for a 4 and a half hour tour to each of the famous resturants on
+                    Cosumel! Enjoy the exotic foods and ambiances of local resturants. Total of 6
+                    different resturants and bars. (Food and drinks not included)</p>
+                    <a class="booking" href="reservations.html">Book Now for only $37.99!</a>
+            </li>
+        </ul>
     </main>
     <footer>
         <p id="sunidahofooter">
